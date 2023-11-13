@@ -1,0 +1,57 @@
+
+.cabecalho__header{
+    width: 101vw;
+    height: 222px;
+
+    position: absolute;
+
+    background: linear-gradient(180deg, #42A5F5 -15.31%, rgba(21, 101, 192, 0.84) 85.09%);
+
+    /* ALINHAMENTO */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 67px;
+}
+
+
+.cabecalho__boas-vindas{
+    margin-left: 28px ;
+}
+
+
+.cabecalho__titulo{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--branco);
+}
+
+.cabecalho__texto{
+    margin-top: 12px;
+
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+
+.cabecalho__imagem{
+    filter: drop-shadow(4px 0px 5px rgba(255, 255, 255, 0.15));
+    margin-right: 31px ;
+    width: 62px;
+}
+
+
+/*  CSS HEADER AGENDA   */ 
+
+
+.cabecalho__agenda{
+   margin-bottom: 4em;
+}
+
+
+.cabecalho__titulo-agenda{
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--branco);
+}
