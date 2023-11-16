@@ -1,0 +1,285 @@
+
+.header {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: #FAF8F5;
+}
+
+.master_texto-header {
+    padding-top: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-header {
+
+    height: auto;
+    color: #3F414E;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 3%;
+    padding-bottom: 10%;
+    width: 80%;
+
+}
+
+.texto-header h1{
+    font-size: 30px;
+}
+
+.input-master {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-usuario {
+
+    width: 305.912px;
+    height: 53.93px;
+    flex-shrink: 0;
+    border-radius: 15px;
+
+
+}
+
+.input-usuario input { /* editando o imput para ficar no tamnaho exato*/
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #F2F3F7;
+    color: #b5b7bd;
+   
+    border: 0;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 108.1%;
+    letter-spacing: 0.8px;
+}
+
+.input-email {
+    margin-top: 4%;
+    width: 305.912px;
+    height: 53.93px;
+    flex-shrink: 0;
+    border-radius: 15px;
+
+
+}
+
+.input-email input { /* editando o imput para ficar no tamnaho exato*/
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #F2F3F7;
+    color: #b5b7bd;
+   
+    border: 0;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 108.1%;
+    letter-spacing: 0.8px;
+}
+
+
+
+.input-senha input { /* editando o imput para ficar no tamnaho exato*/
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #F2F3F7;
+    color: #b5b7bd;
+  
+    border: 0;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 108.1%;
+    letter-spacing: 0.8px;
+}
+
+.input-senha {
+    margin-top: 4%;
+    width: 305.912px;
+    height: 53.93px;
+    flex-shrink: 0;
+    border-radius: 15px;
+
+}
+
+.input-senha-cofirmar {
+    margin-top: 4%;
+    width: 305.912px;
+    height: 53.93px;
+    flex-shrink: 0;
+    border-radius: 15px;
+}
+
+.input-senha-cofirmar input { /* editando o imput para ficar no tamnaho exato*/
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #F2F3F7;
+    color: #b5b7bd;
+  
+    border: 0;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 108.1%;
+    letter-spacing: 0.8px;
+}
+
+.input-email input::placeholder { /* colocando o texto (placeholder) com a cor padrão no input email */
+    color: #b5b7bd;
+    padding-left: 4%;
+}
+.input-senha input::placeholder {/* colocando o texto (placeholder) com a cor padrão no input senha */
+    color: #b5b7bd;
+    padding-left: 4%;
+}
+
+.input-usuario input::placeholder { /* colocando o texto (placeholder) com a cor padrão no input de none de usuario */
+    color: #b5b7bd;
+    padding-left: 4%;
+}
+
+.input-senha-cofirmar input::placeholder {/* colocando o texto (placeholder) com a cor padrão no input senha */
+    color: #b5b7bd;
+    padding-left: 4%;
+}
+
+.botao_login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3%;
+    color: #A1A4B2;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    padding-top: 10%;
+}
+
+
+.botao-confirmar-login{ /* o botão para finalizar a criação da conta, indo a próxima tela*/
+    color: #F6F1FB;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 38px;
+    background: #8E97FD;
+    height: 55.789px;
+    flex-shrink: 0;
+    padding-top: 2%;
+    width: 305px;
+    text-decoration: none;
+    
+}
+
+.botao-confirmar-login:active{ 
+    background:#7781e9;
+    width: 315px;
+    height: 56.789px;
+}
+
+.termos a{ /* colocando a formatação padrão do link*/
+    color: #7183D8;
+    text-decoration: none;
+    text-align: center;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+
+}
+.termos a:link { /* tirando qualquer decoração antes e depois de usar o link*/
+    text-decoration: none;
+    
+}
+
+.termos a:visited {
+    text-decoration: none;
+}
+
+.termos a:hover {
+    text-decoration: none;
+}
+
+.termos a:active {
+    text-decoration: none;
+}
+
+.termos-link{
+    margin-top: -4%;
+
+}
+
+.login-final-pagina{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3%;
+    color: #A1A4B2;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    margin-top: 9%;
+    
+    
+}
+
+.login-final-pagina a{ /* colocando a formatação padrão do link*/
+    color: #7183D8;
+    text-decoration: none;
+    text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+}
+
+.login-final-pagina a:link { /* tirando qualquer decoração antes e depois de usar o link*/
+    text-decoration: none;
+    
+}
+
+.login-final-pagina a:visited {
+    text-decoration: none;
+}
+
+.login-final-pagina a:hover {
+    text-decoration: none;
+}
+
+.login-final-pagina a:active {
+    text-decoration: none;
+}
+
+.principal{
+    margin-top: -30%;
+}
+

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var mySwiper = new Swiper('.swiper-container', {
+
+            slidesPerView: 1.5,
+            spaceBetween: 2,
+
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var mySwiper = new Swiper('.sswiper-container', {
+
+            slidesPerView: 1.5,
+            spaceBetween: 2,
+
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        });
+    });
+
+
+</script>
+<script>
+
+</script>
+
+<body>
+
+
+    <!--  HEADER  -->
+    <!--  Um header que agrupa uma div composta pelos textos ao ledo do icone do sol  -->
+    <header class="cabecalho__header">
+        <div class="cabecalho__boas-vindas">
+            <h1 class="cabecalho__titulo">Bem-vindo, Davi</h1>
+            <p class="cabecalho__texto">Pronto para começar o dia?</p>
+        </div>
+        <img class="cabecalho__imagem" src="./assets/icone-sol-amanhecer.svg" alt="Icone do sol ao amanhecer">
+    </header>
+
+
+    <!--  MAIN  -->
+    <!--  Aqui onde vai ficar todo o conteúdo principal da nossa página  -->
+    <main class="conteudo__main"><!--  primeiro container de conteúdo  -->
+        <div class="box_1">
+            <h1>É amanhã!</h1>
+            <div class="card_aviso">
+                <img class="card__retangulo" src="./assets/icone-home-retangulo.svg">
+                <img class="confete__imagem" src="./assets/icone-confete.svg" alt="confete">
+                <div class="card__conteudo">
+                    <div class="texto_1">
+                        <h1>Rec ‘N’ Play</h1>
+                    </div>
+                    <div class="texto_2">
+                        <h2>Jornada dos Mc’s</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box_2">
+            <h1>Suas Pendências</h1>
+            <div class="abas_navegar">
+
+                <a href="#aba_link1" class="aba">
+                    <span>Tarefas</span>
+                    <img class="retangulo_baixo" src="./assets/icone-retangulo-baixo.svg"></a>
+                <a href="#aba_link2" class="aba">
+                    <span>Atividades</span>
+                    <img class="retangulo_baixo" src="./assets/icone-retangulo-baixo.svg"></a>
+                <a href="#aba_link3" class="aba">
+                    <span>Notas</span>
+                    <img class="retangulo_baixo" src="./assets/icone-retangulo-baixo.svg"></a>
+
+            </div>
+            <div class="abas_conteudo">
+                <div id="aba_link1" class="aba1">
+                    <div class="conteudo_caixa">
+                        <div class="swiper-container"><!-- CONTEINER PRINCIPAL DO CARROSEL  -->
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><!-- CONTEUDO PARA O CARROSEL  -->
+
+                                    <div class="conteudo_main_aba">
+                                        <!-- DIV CENTRRAL DE TODO O CONTEUDO DO ELEMENTO CONTEUDO  -->
+                                        <div class="parte_superior_div_aba">
+                                            <div class="imagem_aba">
+                                                <img class="retangulo" src="./assets/icone-retangulo-roxo.svg">
+                                            </div>
+                                            <div class="texto_aba">
+                                                <h1>conteudo</h1>
+                                                <h2>15 de nov.</h2>
+                                            </div>
+                                        </div>
+                                        <div class="parte_inferior_div_aba">
+                                            <h1>2:00 pm - 4:00 pm</h1>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="swiper-slide"><!-- CONTEUDO PARA O CARROSEL  -->
+
+                                    <div class="conteudo_main_aba">
+                                        <!-- DIV CENTRRAL DE TODO O CONTEUDO DO ELEMENTO conteudo  -->
+                                        <div class="parte_superior_div_aba">
+                                            <div class="imagem_aba">
+                                                <img class="retangulo" src="./assets/icone-home-retangulo-amarelo.svg">
+                                            </div>
+                                            <div class="texto_aba">
+                                                <h1>Apresentação</h1>
+
+                                                <h2>15 de nov.</h2>
+                                            </div>
+                                        </div>
+                                        <div class="parte_inferior_div_aba">
+                                            <h1>5:00 pm - 8:00 pm</h1>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="aba_link2" class="aba2">
+                </div>
+                <div id="aba_link3" class="aba3">
+                </div>
+            </div>
+        </div>
+        <div class="box_3">
+            <h1>Últimos acessados</h1>
+            <div class="sswiper-container"><!-- CONTEINER PRINCIPAL DO CARROSEL  -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><!-- CONTEUDO PARA O CARROSEL  -->
+                        <div class="container_papai">
+                          <div class="filho_imagem">
+                            <img class="bolinha" src="./assets/icone-bolinha.svg">
+                          </div>
+                          <div class="parte_superior_div_aba_ua">
+                            <div class="texto_aba_ua">
+                                <h1>Niver de Hugo</h1>
+                            </div>
+                            <div class="texto_aba_ua">
+                                <h2>18 de nov.</h2>
+                             </div>   
+                          </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"><!-- CONTEUDO PARA O CARROSEL  -->
+                        <div class="container_papai">
+                            <div class="filho_imagem">
+                                <img class="bolinha" src="./assets/icone-bolinha-verde.svg">
+                            </div>
+                            <div class="parte_superior_div_aba_ua">
+                              <div class="texto_aba_ua">
+                                  <h1>Bolo de milho</h1>
+                              </div>
+                              <div class="texto_aba_ua">
+                                  <h2>15 de nov.</h2>
+                               </div>   
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!--  MENU INFERIOR  -->
+    <!--  Um nav para agrupar a lista de links com imagens, usei os <a> com <img> para tornar as imagem clicaveis  -->
+    <nav class="menu__nav">
+        <div class="botao__novo-evento">
+            <a class="botao__link" href="#">
+                <img class="botao__icone" src="./assets/icone-adicionar-agenda.svg">
+            </a>
+
+        </div>
+        <ul class="menu__lista">
+            <li class="menu__item">
+                <a href="#" class="menu__link">
+                    <img class="link__imagem" src="./assets/icone-menu-tarefas.svg" alt="Icone seção tarefas">
+                    <span class="link__texto">Tarefas</span>
+                </a>
+            </li>
+
+            <li class="menu__item">
+                <a href="#" class="menu__link">
+                    <img class="link__imagem" src="./assets/icone-menu-notas.svg" alt="Icone seção tarefas">
+                    <span class="link__texto">Notas</span>
+                </a>
+
+            </li>
+            <li class="menu__item">
+                <a href="index.html" class="menu__link">
+                    <img class="link__imagem" src="./assets/icone-menu-home.svg" alt="Icone seção tarefas">
+                    <span class="link__texto">Home</span>
+                </a>
+            </li>
+
+            <li class="menu__item">
+
+                <a href="agenda.html" class="menu__link">
+                    <img class="link__imagem" src="./assets/icone-menu-agenda-selecionado.svg"
+                        alt="Icone seção tarefas">
+                    <span class="link__texto texto__selecionado">Agenda</span>
+                </a>
+            </li>
+
+            <li class="menu__item">
+                <a href="#" class="menu__link">
+                    <img class="link__imagem" src="./assets/icone-menu-perfil.svg" alt="Icone seção tarefas">
+                    <span class="link__texto">Perfil</span>
+
+                    <!--  Usei a tag span porque imagino que como o texto faz parte do que
+                    o usuário pode clicar e interagir, não um acompanhamento da label  -->
+                </a>
+            </li>
+
+        </ul>
+
+
+    </nav>
+
+    </ul>
+
+
+    </nav>
+
+</body>
+
+</html>

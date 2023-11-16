@@ -1,0 +1,552 @@
+@import url("./calendario.css");
+
+
+html, body
+{
+   
+    background-color: #F4F5F9;
+    width: 393px;
+    height: 222px;
+     max-width: 393px;
+     max-height: 222px;
+}
+
+
+.conteudo__main {
+    height: auto;
+    width: 100%; 
+    overflow: hidden;
+   
+    margin: 0 auto; 
+    padding-bottom: 120px;
+
+
+
+
+    background-color: #F4F5F9;
+
+
+    position:absolute;
+    margin-top: 175px;
+}
+
+
+
+/* CONTEUDO AGENDA */
+.conteudo__agenda {
+    background: var(--cinza-pagina);
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50px;
+    filter: drop-shadow(0px 0px 35px rgba(34, 83, 254, 0.40));
+
+    position: absolute;
+    margin-top: 124px;
+
+}
+
+
+/* ESTILIZAÇÃO CARDS LEMBRETE */
+.lembretes__em-andamento {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.lembrete__card {
+    display: flex;
+    width: 330px;
+    height: 70px;
+    padding: 17px 12px;
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius: 10px;
+    background: var(--branco);
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.05);
+
+}
+
+.card__titulo {
+    font-weight: 500;
+    color: #2F2F2F;
+}
+
+.card__horario {
+    font-weight: 400;
+    color: #81818181;
+}
+
+
+.card__icone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+    font-size: 12px;
+}
+
+.card__favorito img {
+    width: 18px;
+    height: 18px;
+}
+
+.card__data {
+    font-weight: 400;
+    color: #6A6A6A;
+}
+
+/* ESTILIZAÇÃO CARD LEMBRETE FINALIZADOS */
+.lembretes__finalizados {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 2em 23px 2em;
+    align-items: center;
+}
+
+.lembretes__finalizado-icone {
+    width: 24px;
+    height: 24px;
+}
+
+.lembretes__finalizado-titulo {
+    margin-right: 12em;
+    color: #1C1C1C;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.finalizado {
+    filter: opacity(70%);
+}
+
+.finalizado .card__texto {
+    text-decoration: line-through;
+}
+
+
+/* ESTILIZAÇÃO GERAL DA AGENDA */
+
+.main__linha {
+    width: 349px;
+    height: 1px;
+    background: #EAEAEA;
+}
+
+/* ESTILIZAÇÃO DOS AVISOS DA HOME */
+.box_1 {
+    margin-top: 50px;
+    margin-left: 8.3%;
+    height: auto;
+
+    color: #4D5665;
+
+    font-family: Inter;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.card_aviso {
+    margin-top: 20px;
+    display: flex;
+    width: 330px;
+    height: 86px;
+
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+    background: var(--branco);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+.confete__imagem {
+    padding-left: 3%;
+}
+
+.card__conteudo {
+    padding-left: 4%;
+
+}
+
+.texto_1 {
+    color: #364356;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.texto_2 {
+    padding-top: 2%;
+    color: #364356;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.card__texto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+
+    margin-right: 5.5em;
+
+}
+
+.box_2 {
+    
+    margin-top: 50px;
+    margin-left: 8.3%;
+    height: auto;
+    color: #4D5665;
+
+    font-family: Inter;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.box_3 {
+    
+    position: relative;
+    margin-top: 50px;
+    margin-left: 8.3%;
+    height: auto;
+    color: #4D5665;
+
+    font-family: Inter;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.abas_navegar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    margin-right: 13%;
+
+}
+
+
+
+
+
+.abas_navegar a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+.aba {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #B6C8E1;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+    /* 191.667% */
+    letter-spacing: 0.5px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.aba:hover {
+    color: #0077B6;
+
+}
+
+
+div.abas_conteudo div {
+    display: none
+}
+
+div.abas_conteudo div:target {
+    display: block;
+
+
+}
+
+div.aba1 div {
+    /* TORNANDO O CONTEUDO VISIVEL */
+    display: flex
+}
+
+div.aba3 div {
+    /* TORNANDO O CONTEUDO VISIVEL */
+    display: flex
+}
+
+div.aba2 div {
+    /* TORNANDO O CONTEUDO VISIVEL */
+    display: flex
+}
+
+div.aba_link1 div {
+    /* COLOCANDO A PRIMEIRA ABA JÁ ABERTA AO ENTRAR */
+    display: block
+}
+
+.abas_conteudo {
+    width: 100%;
+    height: 100%;
+}
+
+/* CONTEUDOS DE CADA ABA */
+/* ABA 1*/
+.aba1 {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+}
+
+
+
+.swiper-container {
+    width: 100%;
+    padding-right: 25%;
+    position: relative; 
+        z-index: 0; 
+
+}
+
+.sswiper-container {
+
+        position: relative; 
+        z-index: 0; 
+    
+    padding-right: 2%;
+    padding-top: 20px;
+}
+
+
+
+.conteudo_main_aba {
+    /* DIV CENTRAL*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 251px;
+    height: 145px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.15);
+    padding-left: 6%;
+    padding-top: 4%;
+   
+}
+
+.conteudo_main_aba h1 {
+    color: #2F2F2F;
+    text-align: center;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.texto_aba {
+    /* FORMATANDO O TEXTO */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 12%;
+
+    
+
+}
+
+.texto_aba h1 {
+    /* MUDANDO O TAMANHO E CORES DO TEXTO*/
+    color: #2F2F2F;
+
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.texto_aba h2 {
+    /* MUDANDO O TAMANHO E CORES DO TEXTO*/
+    color: #2F2F2F;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 112.182%;
+    padding-top: 20%;
+
+}
+
+.parte_inferior_div_aba {
+    padding-top: 8%;
+    display: flex;
+    justify-content: center;
+    padding-right: 15%;
+}
+
+.retangulo {
+    /* AJUSTAND O FORMADO DO TRIANGULO*/
+    width: 5px;
+    height: 56px;
+}
+
+.container_papai {
+     margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 340px;
+    
+    /* Ajuste o width conforme necessário */
+    height: 88px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.15);
+}
+
+.texto_aba_ua {
+    /* FORMATANDO O TEXTO */
+    display: flex;
+    align-items: flex-start;
+    padding-left: 12%;
+
+}
+
+.filho_imagem {
+    display: flex;
+    justify-content: center;
+}
+
+.texto_aba_ua h1 {
+    /* MUDANDO O TAMANHO E CORES DO TEXTO*/
+    color: #2F2F2F;
+
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.texto_aba_ua h2 {
+    /* MUDANDO O TAMANHO E CORES DO TEXTO*/
+    color: #2F2F2F;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 112.182%;
+    padding-top: 10%;
+
+}
+
+.bolinha {
+    width: 40px;
+    height: 40px;
+    padding-top: 2px;
+
+
+}
+
+.parte_superior_div_aba_ua {
+    padding-top: 2px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 5px;
+}
+
+/*  */
+
+@media (max-width: 393px){
+    .container_papai {
+        width: 200px;
+    }
+  
+   .conteudo_main_aba {
+    /* DIV CENTRAL*/
+    display: flex;
+    flex-direction: column;
+    width: 161px;
+    height: 115px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.15);
+    padding-left: 10%;
+    padding-top: 8%;
+}
+
+
+}
+@media (min-width: 394px){
+
+    .parte_superior_div_aba{
+        width: 100%;
+        
+    }
+    .parte_inferior_div_aba{
+        width: 100%;
+        padding-right: 30%;
+        color: #2F2F2F;
+    
+       
+        
+        
+    }
+    .texto_aba{
+        padding-left: 7%;
+       
+    }
+    .texto_aba h1 {
+        
+    
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
+    .texto_aba h2 {
+      
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 112.182%;
+        padding-top: 10%;
+    
+    }
+    .retangulo {
+        /* AJUSTAND O FORMADO DO TRIANGULO*/
+        width: 7px;
+        height: 66px;
+    }
+    }
+

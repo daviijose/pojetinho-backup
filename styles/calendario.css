@@ -1,0 +1,111 @@
+/*  QUADRADO DO CALENDARIO  */
+
+.container__calendario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+
+/*  ESTILIZAÇÃO DO CALENDARIO   */
+
+.calendario{
+    background-color: var(--branco);
+    width: 330px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+header .calendario__mes-atual{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.calendario header{
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-around;
+}
+
+header .calendario__seta{
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    line-height: 18px;
+   
+    cursor: pointer;
+    
+    border-radius: 50%;
+}
+
+.seta__imagem{
+    width: 19px;
+}
+
+header .calendario__seta:hover{
+    background: var(--cinza-finalizado);
+}
+
+
+/* ESTILIZANDO OS DIAS */
+
+.calendario .calendario__dias{
+    margin-bottom: 20px;
+}
+
+.calendario__dias li{
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.calendario__dias li.dia__inativo{
+    color: rgba(0, 0, 0, 0.20);
+}
+
+.calendario__dias li.dia__ativo{
+    color: var(--branco);
+}
+
+
+.calendario__conteudo .calendario__semanas{
+    font-weight: 500;
+}
+
+
+.calendario__conteudo ul{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.calendario__conteudo ul li{
+    position: relative;
+    width: calc(100% / 7);
+}
+
+.calendario__conteudo .calendario__dias li::before{
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.calendario__dias li:hover::before{
+    background: #f2f2f2;
+}
+
+.calendario__dias li.dia__ativo::before{
+    background: var(--azul-calendario);
+}
