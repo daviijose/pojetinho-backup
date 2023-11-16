@@ -1,0 +1,144 @@
+
+
+.header {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: #FAF8F5;
+}
+
+.master_texto_header {
+    margin-top: 190px;
+    
+
+}
+
+.texto_header {
+    
+    margin-left: auto;
+
+
+    font-style: normal;
+    text-align: center;
+    width: 100%;
+    margin-right: 31%;
+    color: #3F414E;
+
+}
+
+.texto_header h1 {
+    font-size: 30px;
+}
+
+.subtexto_header {
+    margin-top: 8%;
+    color: #A1A4B2;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 165%;
+    /* 26.4px */
+    padding-left: 9%;
+    padding-right: 9%;
+    word-spacing: 1px;
+}
+
+
+
+
+.main_master {
+    margin-top: 243px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.botao_login {
+    color: #F6F1FB;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 38px;
+    background: #8E97FD;
+    height: 55.789px;
+    flex-shrink: 0;
+    padding-top: 2%;
+    width: 305px;
+    text-decoration: none;
+}
+
+.botao_login:active {
+    background: #7781e9;
+    width: 315px;
+    height: 56.789px;
+}
+
+.sub_login {
+    color: #A1A4B2;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    padding-top: 3%;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-left: auto;
+}
+
+.inico_link-cadastro {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-left: auto;
+    color: #8E97FD;
+    font-family: Inter;
+    font-size: 105%;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.inico_link-cadastro a:link {
+    text-decoration: none;
+
+}
+
+.inico_link-cadastro a:visited {
+    text-decoration: none;
+}
+
+.inico_link-cadastro a:hover {
+    text-decoration: none;
+}
+
+.inico_link-cadastro a:active {
+    text-decoration: none;
+}
+
+.inico_link-botao_login a:link {
+    text-decoration: none;
+
+}
+
+.inico_link-botao_login a:visited {
+    text-decoration: none;
+}
+
+.inico_link-botao_login a:hover {
+    text-decoration: none;
+}
+
+.inico_link-botao_login a:active {
+    text-decoration: none;
+}
